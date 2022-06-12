@@ -7,6 +7,9 @@
     box-sizing: border-box;
     text-decoration: none;
 }
+html {
+    scroll-behavior: smooth;
+}
 .max-width {
     max-width: 1440px;
     margin: auto;
@@ -72,6 +75,32 @@
     cursor: pointer;
     display: none;
 }
+.scroll-up-btn i {
+    font-size: 24px;
+}
+.scroll-up-btn {
+    position: fixed;
+    height: 45px;
+    width: 45px;
+    background: crimson;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: 30px;
+    text-align: center;
+    line-height: 45px;
+    color: #fff;
+    z-index: 999;
+    font-size: 30px;
+    border-radius: 50%;
+    cursor: pointer;
+    opacity: 0;
+    pointer-events: none;
+    transition: all 0.3s ease;
+}
+.scroll-up-btn.show {
+    opacity: 1;
+    pointer-events: auto;
+}
 
 
 /* home section style */
@@ -126,7 +155,7 @@
 section {
     padding: 100px 0;
 }
-.about, .services, .skills, .team, .contact {
+.about, .services, .skills, .team, .contact, footer {
     font-family: 'Poppins', sans-serif; 
 }
 
@@ -507,6 +536,21 @@ section .title::after {
     color: crimson;
 }
 
+
+/* footer */
+footer {
+    background: #111;
+    padding: 20px 23px;
+    color: #fff;
+    text-align: center;
+}
+footer span a{
+    color: crimson;
+    text-decoration: none;
+}
+footer span a:hover {
+    text-decoration: underline;
+}
 
 
 /* responsive media  */
