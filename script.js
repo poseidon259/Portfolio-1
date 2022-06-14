@@ -19,18 +19,18 @@ $(document).ready(function() {
 
     //typing text
     var typed = new Typed(".typing", {
-        strings: ["Software Engineer", "Web Developer", "Designer", "Freelancer"],
+        strings: [" ","Web Developer", "Web Designer", "Software Engineer", "Designer"],
         typeSpeed: 100,
         backSpeed: 60,
-        loop: true,
-    });
+        loop: true
+    }) 
 
-    var typed1 = new Typed(".typing-1", {
-        strings: ["Software Engineer", "Web Developer", "Designer", "Freelancer"],
+    var typed2 = new Typed(".typing-1", {
+        strings: [" ","Web Developer", "Web Designer", "Software Engineer", "Designer"],
         typeSpeed: 100,
         backSpeed: 60,
-        loop: true,
-    });
+        loop: true
+    }) 
 
     // toggle menu bar
     $('.menu-btn').click(function() {
