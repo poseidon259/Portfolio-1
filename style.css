@@ -443,6 +443,9 @@ section .title::after {
     border: 5px solid crimson;
     transition: all 0.3s ease;
 }
+.team .carousel .card p a {
+    color: #fff;
+}
 .team .carousel .card:hover img{
     border-color: #fff;
 }
