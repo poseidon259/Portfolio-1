@@ -15,6 +15,13 @@ html {
     margin: auto;
     padding: 0 80px;
 }
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: -15px;
+    margin-right: -15px;
+    position: relative;
+}
 
 
 /* navbar style */
@@ -106,12 +113,14 @@ html {
 /* home section style */
 .home {
     display: flex;
-    background: url("images/banner.jpg") no-repeat center;
+    background: url("images/banner1.jpg") no-repeat center;
     height: 100vh;
     color: #fff;
     min-height: 500px;
     font-family: 'Ubuntu', sans-serif;
+    position: relative;
 }
+
 .home .max-width {
     margin: auto 0 auto 40px;
 }
@@ -330,9 +339,27 @@ section .title::after {
     background: none;
     color: crimson;
 }
-.skills .skills-content .right .bars {
-    margin-bottom: 15px;
+.skills .skills-content .right {
+    display: flex;
+    text-align: center;
+    align-items: center;
 }
+.skills .skills-content .right .bars {
+    margin-left: 25px;
+    margin-bottom: 15px;
+    
+}
+.skills .skills-content .right .bars span {
+    display: block;
+    text-align: center;
+    align-items: center;
+}
+.skills .skills-content .right .bars svg {
+    display: block;
+    width: 64px;
+    height: 64px;
+}
+
 .skills .skills-content .right .infor {
     display: flex;
     margin-bottom: 5px;
@@ -365,7 +392,7 @@ section .title::after {
     width: 80%;
 }
 .skills .skills-content .right .js::before {
-    width: 60%;
+    width: 70%;
 }
 .skills .skills-content .right .php::before {
     width: 70%;
@@ -373,11 +400,14 @@ section .title::after {
 .skills .skills-content .right .mysql::before {
     width: 70%;
 }
+.skills .skills-content .right .git::before {
+    width: 70%;
+}
 
 
 /* Team section style */
 .team .title::after {
-    content: "who with me";
+    content: "what i do";
     background: #111;
 }
 .team .carousel .card {
